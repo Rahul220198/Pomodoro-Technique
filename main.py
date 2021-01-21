@@ -34,10 +34,10 @@ def start_timer():
     long_break_sec = LONG_BREAK_MIN * 60
     if reps % 8 == 0:
         count_down(long_break_sec)
-        title_label.config(text="We've done a quite lot's of work lets take a Long Break of 20 minutes", fg=RED)
+        title_label.config(text="You've done a quite lot's of work today lets take a Long Break of 20 minutes", fg=RED)
     elif reps % 2 == 0:
         count_down(short_break_sec)
-        title_label.config(text="Lets Take a 5 minute short Break", fg=PINK)
+        title_label.config(text="Lets Take a 5 minute short Break", fg=RED)
     else:
         count_down(work_sec)
         title_label.config(text=" Let's Crush it down and let's begin Work Mode On", font=(FONT_NAME, 10, "bold"),
